@@ -1,0 +1,22 @@
+{
+  "name": "openclassrooms-ohmyfood",
+  "description": "Dynamisez une page web avec des animations CSS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremyteurterie/openclassrooms-ohmyfood.git"
+  },
+  "author": "jeremy.teurterie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremyteurterie/openclassrooms-ohmyfood/issues"
+  },
+  "homepage": "https://github.com/jeremyteurterie/openclassrooms-ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.52.3"
+  }
+}

@@ -1,0 +1,33 @@
+.footer {
+    background-color: #353535;
+    padding-left: 12px;
+    padding-bottom: 16px;
+
+    .list {
+        display: flex;
+    }
+
+    .text1 {
+        padding-left: 6px;
+    }
+
+    .text2 {
+        padding-left: 3px;
+    }
+
+    h4 {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: white;
+        font-family: $font1;
+        font-size: xx-small;
+    }
+
+    li {
+        color: white;
+        padding-bottom: 2px;
+        list-style: none;
+        font-family: $font5;
+        font-size: 7px;
+    }
+}
