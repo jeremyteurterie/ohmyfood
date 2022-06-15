@@ -1,7 +1,7 @@
 .localisation {
     background-color: #EEEEEE;
     font-family: $font3;
-    font-size: xx-small;
+    font-size: 16px;
     text-align: center;
     padding: 8px 0;
     box-shadow: 0 0 3px black;
@@ -18,13 +18,13 @@
 
     h2 {
         font-family: $font4;
-        font-size: small;
+        font-size: 24px;
         padding: 16px 24px 0 24px;
     }
 
     p {
         font-family: $font5;
-        font-size: x-small;
+        font-size: 16px;
         padding: 8px 0 16px 0;
     }
 
@@ -34,9 +34,9 @@
         border-radius: 2rem;
         box-shadow: 2px 1px 10px -5px black;
         color: white;
-        font-size: 0.5rem;
+        font-size: 16px;
         font-weight: bold;
-        padding: 0.5rem;
+        padding: 16px 24px;
         transition: transform 200ms;
     }
 
@@ -50,7 +50,7 @@
 
     h3 {
         font-family: $font4;
-        font-size: small;
+        font-size: 24px;
         padding: 32px 0 16px 8px;
     }
 
@@ -71,10 +71,9 @@
         align-items: center;
         background-color: #F8F8F8;
         position: relative;
-        padding: 8px;
+        padding: 16px;
         border-radius: 10px;
         font-family: $font2;
-        font-size: xx-small;
         gap: 8px;
     
     & .counter {
@@ -87,7 +86,7 @@
 
     & p {
         color: white;
-        font-size: xx-small;
+        font-size: 13px;
     }
 
     }
@@ -100,7 +99,7 @@
 
     & h3 {
         font-family: $font4;
-        font-size: small;
+        font-size: 24px;
         padding: 24px 0 16px 0;
     }
 
@@ -121,14 +120,14 @@
             top: 8px;
             right: 10px;
             background-color: $tertiaire;
-            padding: 3px 6px 3px 6px;
+            padding: 9px 12px;
             font-family: $font3;
-            font-size: 8px;
+            font-size: 16px;
             color: #078a69;
         }
     
         & .card-image {
-            height: 100px;
+            height: 150px;
             background-size: cover;
             background-position: bottom;
             border-radius: 10px 10px 0 0;
@@ -143,12 +142,12 @@
 
             & h5 {
                 font-family: $font4;
-                font-size: xx-small;
+                font-size: small;
             }
 
             & p {
                 font-family: $font5;
-                font-size: xx-small;
+                font-size: small;
                 padding-top: 1px;
             }
 

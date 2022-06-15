@@ -1,18 +1,17 @@
 .footer {
     background-color: #353535;
-    padding-left: 12px;
-    padding-bottom: 16px;
+    padding: 0 32px 16px 32px;
 
     .list {
         display: flex;
     }
 
     .text1 {
-        padding-left: 6px;
+        padding-left: 10px;
     }
 
     .text2 {
-        padding-left: 3px;
+        padding-left: 4px;
     }
 
     h4 {
@@ -20,7 +19,7 @@
         padding-bottom: 8px;
         color: white;
         font-family: $font1;
-        font-size: xx-small;
+        font-size: medium;
     }
 
     li {
@@ -28,6 +27,6 @@
         padding-bottom: 2px;
         list-style: none;
         font-family: $font5;
-        font-size: 7px;
+        font-size: medium;
     }
 }
