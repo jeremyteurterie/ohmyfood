@@ -28,11 +28,22 @@ a {
   text-decoration: none;
 }
 
-#logo {
-  font-size: 32px;
+.header {
+  position: relative;
+}
+.header h2 {
   font-family: font1, sans-serif;
+  font-size: 32px;
   text-align: center;
-  padding: 16px 0 8px 0;
+  padding: 16px 0px 8px 0px;
+}
+
+.arrow {
+  position: absolute;
+  left: 32px;
+  bottom: 20px;
+  font-size: 24px;
+  color: black;
 }
 
 .localisation {
@@ -224,8 +235,9 @@ a {
 }
 
 h2 {
+  font-size: 32px;
   font-family: font1, sans-serif;
-  padding: 35px 0 0 16px;
+  padding: 35px 0px 0px 16px;
 }
 
 .header-restaurant-1 {
@@ -234,7 +246,7 @@ h2 {
   justify-content: space-between;
   position: relative;
   background-color: #F8F8F8;
-  border-radius: 32px 32px 0 0;
+  border-radius: 32px 32px 0px 0px;
   margin-top: -90px;
   padding-bottom: 20px;
   border-bottom: white;
