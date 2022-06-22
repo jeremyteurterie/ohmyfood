@@ -3,7 +3,7 @@
     font-family: $font3;
     font-size: 16px;
     text-align: center;
-    padding: 8px 0px;
+    padding: 16px 0px;
     box-shadow: 0px 0px 3px black;
 
     i {
@@ -64,6 +64,11 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
     }
 
     .card-fonctionnement {
@@ -81,15 +86,15 @@
         display: grid;
         place-items: center;
         border-radius: 50%;
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
         position: absolute;
         left: -11px;
         content: counter(tuto);
         counter-increment: tuto;
         background-color: $color1;
         color: white;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     }
@@ -110,6 +115,11 @@
         grid-template-columns: 1;
         gap: 16px;
         padding-bottom: 24px;
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2,1fr);
+            gap: 32px;
+        }
     }
 
     .card {
