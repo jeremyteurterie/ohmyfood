@@ -2,30 +2,24 @@
   font-family: "font1";
   src: url(../openclassrooms-ohmyfood/assets/fonts/Shrikhand-Regular.ttf);
 }
-
 @font-face {
   font-family: "font2";
   src: url(../openclassrooms-ohmyfood/assets/fonts/Roboto-Regular.ttf);
 }
-
 @font-face {
   font-family: "font3";
   src: url(../openclassrooms-ohmyfood/assets/fonts/Roboto-Medium.ttf);
 }
-
 @font-face {
   font-family: "font4";
   src: url(../openclassrooms-ohmyfood/assets/fonts/Roboto-Bold.ttf);
 }
-
 @font-face {
   font-family: "font5";
   src: url(../openclassrooms-ohmyfood/assets/fonts/Roboto-Light.ttf);
 }
-
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -46,11 +40,9 @@ a {
   font-family: font3, sans-serif;
   font-size: 16px;
   text-align: center;
-  padding: 8px 0;
-  -webkit-box-shadow: 0 0 3px black;
-          box-shadow: 0 0 3px black;
+  padding: 8px 0px;
+  box-shadow: 0px 0px 3px black;
 }
-
 .localisation i {
   padding: 0 8px 0 0;
 }
@@ -58,126 +50,97 @@ a {
 .accueil-description {
   text-align: center;
   background-color: #F8F8F8;
-  padding: 0 0 32px 0;
+  padding: 0px 0px 32px 0px;
 }
-
 .accueil-description h2 {
   font-family: font4, sans-serif;
   font-size: 24px;
-  padding: 16px 24px 0 24px;
+  padding: 16px 24px 0px 24px;
 }
-
 .accueil-description p {
   font-family: font5, sans-serif;
   font-size: 16px;
   padding: 8px 0 16px 0;
 }
-
 .accueil-description button {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   border: none;
   border-radius: 2rem;
-  -webkit-box-shadow: 2px 1px 10px -5px black;
-          box-shadow: 2px 1px 10px -5px black;
+  box-shadow: 2px 1px 10px -5px black;
   color: white;
   font-size: 16px;
   font-weight: bold;
   padding: 16px 24px;
-  -webkit-transition: -webkit-transform 200ms;
-  transition: -webkit-transform 200ms;
   transition: transform 200ms;
-  transition: transform 200ms, -webkit-transform 200ms;
 }
-
 .accueil-description button:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .fonctionnement {
-  padding: 0 0 32px 0;
+  counter-reset: tuto;
+  padding: 24px;
 }
-
 .fonctionnement h3 {
   font-family: font4, sans-serif;
   font-size: 24px;
-  padding: 32px 0 16px 8px;
+  padding: 32px 0px 24px 0px;
 }
-
 .fonctionnement i {
   color: darkgrey;
-  padding-left: 12px;
+  padding-left: 4px;
 }
-
 .fonctionnement .fonctionnement-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 16px;
+  flex-direction: column;
   gap: 8px;
 }
-
-.fonctionnement .card1, .fonctionnement .card2, .fonctionnement .card3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.fonctionnement .card-fonctionnement {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: #F8F8F8;
   position: relative;
-  padding: 16px;
-  border-radius: 10px;
-  font-family: font2, sans-serif;
-  gap: 8px;
-}
-
-.fonctionnement .card1 .counter, .fonctionnement .card2 .counter, .fonctionnement .card3 .counter {
-  position: absolute;
-  background-color: #9356DC;
+  padding: 24px;
+  position: relative;
   border-radius: 20px;
-  padding: 0 3px 0 3px;
-  left: 1%;
+  font-family: font2, sans-serif;
+  gap: 16px;
 }
-
-.fonctionnement .card1 p, .fonctionnement .card2 p, .fonctionnement .card3 p {
+.fonctionnement .card-fonctionnement::before {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -11px;
+  content: counter(tuto);
+  counter-increment: tuto;
+  background-color: #9356DC;
   color: white;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .restaurant {
   background-color: #F8F8F8;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 24px;
 }
-
 .restaurant h3 {
   font-family: font4, sans-serif;
   font-size: 24px;
-  padding: 24px 0 16px 0;
+  padding: 24px 0px 20px 0px;
 }
-
 .restaurant .menu {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
+  grid-template-columns: 1;
   gap: 16px;
   padding-bottom: 24px;
 }
-
 .restaurant .card {
-  -webkit-box-shadow: 2px 1px 10px -5px black;
-          box-shadow: 2px 1px 10px -5px black;
+  box-shadow: 2px 1px 10px -5px black;
   border-radius: 10px;
   position: relative;
 }
-
 .restaurant .card .new {
   position: absolute;
   top: 8px;
@@ -188,14 +151,12 @@ a {
   font-size: 16px;
   color: #078a69;
 }
-
 .restaurant .card .card-image {
   height: 150px;
   background-size: cover;
   background-position: bottom;
   border-radius: 10px 10px 0 0;
 }
-
 .restaurant .card .card-description {
   background-color: white;
   color: black;
@@ -203,52 +164,41 @@ a {
   padding: 8px 0 8px 8px;
   position: relative;
 }
-
 .restaurant .card .card-description h5 {
   font-family: font4, sans-serif;
-  font-size: small;
+  font-size: 16px;
 }
-
 .restaurant .card .card-description p {
   font-family: font5, sans-serif;
-  font-size: small;
+  font-size: 16px;
   padding-top: 1px;
 }
-
 .restaurant .card .card-description i {
-  font-size: 12px;
+  font-size: 24px;
   position: absolute;
   right: 16px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 .restaurant .card .card-description .fas {
   color: transparent;
   opacity: 0;
   background-clip: text;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
-
 .restaurant .card .card-description:hover .fas {
   opacity: 1;
 }
-
 .restaurant .card .card-image1 {
   background-image: url("../openclassrooms-ohmyfood/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
-
 .restaurant .card .card-image2 {
   background-image: url("../openclassrooms-ohmyfood/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-position: center;
 }
-
 .restaurant .card .card-image3 {
   background-image: url("../openclassrooms-ohmyfood/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
-
 .restaurant .card .card-image4 {
   background-image: url("../openclassrooms-ohmyfood/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
@@ -257,10 +207,8 @@ a {
   display: block;
   width: 100%;
   height: 35vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 
 h2 {
@@ -269,15 +217,9 @@ h2 {
 }
 
 .header-restaurant-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   background-color: #F8F8F8;
   border-radius: 32px 32px 0 0;
@@ -285,87 +227,61 @@ h2 {
   padding-bottom: 20px;
   border-bottom: white;
 }
-
 .header-restaurant-1 i {
   position: absolute;
   font-size: 24px;
   right: 32px;
   top: 60%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 .header-restaurant-1 .fas {
   color: transparent;
   opacity: 0;
   background-clip: text;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
-
 .header-restaurant-1 .fas:hover .fas {
   opacity: 1;
 }
 
-.menu {
+.menu-restaurant {
   background-color: #F8F8F8;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  padding: 0 16px;
+  grid-template-columns: 1fr;
+  padding: 0px 16px;
 }
-
 @media (min-width: 1000px) {
-  .menu {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+  .menu-restaurant {
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
   }
 }
-
-.menu .submenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.menu-restaurant .submenu {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 16px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-
-.menu .menu-title {
+.menu-restaurant .menu-title {
   padding-top: 32px;
   font-family: font2, sans-serif;
 }
-
-.menu .menuitem {
+.menu-restaurant .menuitem {
   background-color: white;
   border-radius: 10px;
-  -webkit-box-shadow: 1px 1px 7px -4px black;
-          box-shadow: 1px 1px 7px -4px black;
+  box-shadow: 1px 1px 7px -4px black;
   padding: 16px;
   gap: 32px;
   font-family: font3, sans-serif;
 }
-
-.menu .menuitem .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.menu-restaurant .menuitem .flex {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.menu .menuitem .text p {
+.menu-restaurant .menuitem .text p {
   font-family: font5, sans-serif;
 }
 
@@ -374,61 +290,53 @@ h2 {
   padding: 32px 0;
   text-align: center;
 }
-
 .button button {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   border: none;
   border-radius: 2rem;
-  -webkit-box-shadow: 2px 1px 10px -5px black;
-          box-shadow: 2px 1px 10px -5px black;
+  box-shadow: 2px 1px 10px -5px black;
   color: white;
   font-size: 20px;
   font-weight: bold;
   padding: 16px 24px;
-  -webkit-transition: -webkit-transform 200ms;
-  transition: -webkit-transform 200ms;
   transition: transform 200ms;
-  transition: transform 200ms, -webkit-transform 200ms;
 }
-
 .button button button:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .footer {
   background-color: #353535;
   padding: 0 32px 16px 32px;
+  color: white;
 }
-
 .footer .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
+.footer .list a {
+  text-decoration: none;
+  color: white;
+}
+.footer .list a:hover {
+  text-decoration: underline;
+}
 .footer .text1 {
   padding-left: 10px;
 }
-
 .footer .text2 {
   padding-left: 4px;
 }
-
 .footer h4 {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: white;
   font-family: font1, sans-serif;
   font-size: medium;
 }
-
 .footer li {
-  color: white;
   padding-bottom: 2px;
   list-style: none;
   font-family: font5, sans-serif;
   font-size: medium;
 }
+
 /*# sourceMappingURL=style.css.map */

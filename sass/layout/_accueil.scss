@@ -3,8 +3,8 @@
     font-family: $font3;
     font-size: 16px;
     text-align: center;
-    padding: 8px 0;
-    box-shadow: 0 0 3px black;
+    padding: 8px 0px;
+    box-shadow: 0px 0px 3px black;
 
     i {
         padding: 0 8px 0 0;
@@ -14,12 +14,12 @@
 .accueil-description {
     text-align: center;
     background-color: #F8F8F8;
-    padding: 0 0 32px 0;
+    padding: 0px 0px 32px 0px;
 
     h2 {
         font-family: $font4;
         font-size: 24px;
-        padding: 16px 24px 0 24px;
+        padding: 16px 24px 0px 24px;
     }
 
     p {
@@ -46,47 +46,50 @@
 }
 
 .fonctionnement {
-    padding: 0 0 32px 0;
+    counter-reset: tuto;
+    padding: 24px;
 
     h3 {
         font-family: $font4;
         font-size: 24px;
-        padding: 32px 0 16px 8px;
+        padding: 32px 0px 24px 0px;
     }
 
     i {
         color: darkgrey;
-        padding-left: 12px;
+        padding-left: 4px;
     }
 
     .fonctionnement-cards {
         display: flex;
         flex-direction: column;
-        padding: 0 16px;
         gap: 8px;
     }
 
-    .card1, .card2, .card3 {
+    .card-fonctionnement {
         display: flex;
         align-items: center;
         background-color: #F8F8F8;
         position: relative;
-        padding: 16px;
-        border-radius: 10px;
-        font-family: $font2;
-        gap: 8px;
-    
-    & .counter {
-        position: absolute;
-        background-color: $color1;
+        padding: 24px;
+        position: relative;
         border-radius: 20px;
-        padding: 0 3px 0 3px;
-        left: 1%;
-    }
+        font-family: $font2;
+        gap: 16px;
 
-    & p {
+    &::before {
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: -11px;
+        content: counter(tuto);
+        counter-increment: tuto;
+        background-color: $color1;
         color: white;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     }
@@ -94,13 +97,12 @@
 
 .restaurant {
     background-color: #F8F8F8;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 24px;
 
     & h3 {
         font-family: $font4;
         font-size: 24px;
-        padding: 24px 0 16px 0;
+        padding: 24px 0px 20px 0px;
     }
 
     .menu {
@@ -142,17 +144,17 @@
 
             & h5 {
                 font-family: $font4;
-                font-size: small;
+                font-size: 16px;
             }
 
             & p {
                 font-family: $font5;
-                font-size: small;
+                font-size: 16px;
                 padding-top: 1px;
             }
 
             i {
-                font-size: 12px;
+                font-size: 24px;
                 position: absolute;
                 right: 16px;
                 top: 50%;

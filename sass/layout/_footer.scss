@@ -1,9 +1,19 @@
 .footer {
     background-color: #353535;
     padding: 0 32px 16px 32px;
+    color: white;
 
     .list {
         display: flex;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     }
 
     .text1 {
@@ -17,13 +27,11 @@
     h4 {
         padding-top: 8px;
         padding-bottom: 8px;
-        color: white;
         font-family: $font1;
         font-size: medium;
     }
 
     li {
-        color: white;
         padding-bottom: 2px;
         list-style: none;
         font-family: $font5;
