@@ -33,15 +33,20 @@
         border: none;
         border-radius: 2rem;
         box-shadow: 2px 1px 10px -5px black;
-        color: white;
         font-size: 16px;
         font-weight: bold;
         padding: 16px 24px;
-        transition: transform 200ms;
+        transition: transform 100ms;
+
+        a {
+            color: white;
+        }
     }
 
     button:hover {
-        transform: scale(1.02);
+        transform: scale(1.01);
+        opacity: 80%;
+        box-shadow: 2px 1px 20px -5px black;
     }
 }
 
