@@ -66,22 +66,61 @@ h2 {
     }
 
     .menuitem {
-        background-color: white;
         border-radius: 20px;
+        background-color: white;
         box-shadow: 1px 1px 7px -4px black;
-        padding: 16px;
         gap: 32px;
         font-family: $font3;
 
         .flex {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .price {
+            display: flex;
+            align-items: flex-end;
+            margin-left: auto;
+            padding-right: 16px;
+            padding-bottom: 16px;
+        }
+
+        .text {
+            padding: 16px;
         }
 
         & .text p {
             font-family: $font5;
         }
+
+        .check {
+            display: grid;
+            place-items: center;
+            background-color: $tertiaire;
+            margin-right: -64px;
+            border-radius: 0px 20px 20px 0px;
+            width: 64px;
+            transition: all 0.5s;
+        }
+
+        .check i {
+            display: grid;
+            place-items: center;
+            color: $tertiaire;
+            width: 24px;
+            border-radius: 32px;
+            background-color: white;
+            aspect-ratio: 1;
+        }
+
+        &:hover
+        .check {
+            margin-right: 0;
+            i {
+                animation: spin2 0.75s ease;
+            }
+        } 
     }
 }
 

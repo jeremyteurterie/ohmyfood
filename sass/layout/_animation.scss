@@ -1,4 +1,4 @@
-// LOADING SPINNER ACUEIL \\
+// LOADING SPINNER ACCUEIL \\
 .loading-spinner {
     position: fixed;
     display: flex;
@@ -32,6 +32,17 @@
         transform: rotate(360deg);
     }
 }
+
+// TRANSITION MENU \\
+@keyframes spin2 {
+    0% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
 // MENU APPARITION \\
 @keyframes apparition {
     0% {
@@ -103,5 +114,4 @@
 .delay-4-9 {
     animation-delay: 900ms;
 }
-
 
