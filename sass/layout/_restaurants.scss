@@ -22,25 +22,6 @@ h2 {
     margin-top: -90px;
     padding-bottom: 20px;
     border-bottom: white;
-
-    i {
-        position: absolute;
-        font-size: 24px;
-        right: 32px;
-        top: 60%;
-        transform: translateY(-50%);
-    }
-
-    .fas {
-        color: transparent;
-        opacity: 0;
-        background-clip: text;
-        background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-    
-        &:hover .fas {
-            opacity: 1;
-        }
-    }
 }
 
 .menu-restaurant {
@@ -147,5 +128,27 @@ h2 {
             opacity: 80%;
             box-shadow: 2px 1px 10px -5px black;
         }
+    }
+}
+
+.heart-restaurant {
+    i {
+        color: black;
+        font-size: 24px;
+        position: absolute;
+        right: 34px;
+        top: 39.5%;
+        transform: translateY(-50%);
+    }
+
+    .fas {
+        color: transparent;
+        opacity: 0;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+    }
+
+    &:hover .fas {
+        opacity: 1;
     }
 }

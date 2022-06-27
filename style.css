@@ -198,22 +198,6 @@ a {
   font-size: 16px;
   padding-top: 1px;
 }
-.restaurant .card .card-description i {
-  font-size: 24px;
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.restaurant .card .card-description .fas {
-  color: transparent;
-  opacity: 0;
-  background-clip: text;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-}
-.restaurant .card .card-description:hover .fas {
-  opacity: 1;
-}
 .restaurant .card .card-image1 {
   background-image: url("../openclassrooms-ohmyfood/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
@@ -226,6 +210,24 @@ a {
 }
 .restaurant .card .card-image4 {
   background-image: url("../openclassrooms-ohmyfood/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.heart i {
+  color: black;
+  font-size: 24px;
+  position: absolute;
+  right: 28px;
+  top: 85%;
+  transform: translateY(-50%);
+}
+.heart .fas {
+  color: transparent;
+  opacity: 0;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+}
+.heart:hover .fas {
+  opacity: 1;
 }
 
 .loading-spinner {
@@ -372,22 +374,6 @@ h2 {
   padding-bottom: 20px;
   border-bottom: white;
 }
-.header-restaurant-1 i {
-  position: absolute;
-  font-size: 24px;
-  right: 32px;
-  top: 60%;
-  transform: translateY(-50%);
-}
-.header-restaurant-1 .fas {
-  color: transparent;
-  opacity: 0;
-  background-clip: text;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-}
-.header-restaurant-1 .fas:hover .fas {
-  opacity: 1;
-}
 
 .menu-restaurant {
   background-color: #F8F8F8;
@@ -482,6 +468,24 @@ h2 {
   transition-duration: 500ms;
   opacity: 80%;
   box-shadow: 2px 1px 10px -5px black;
+}
+
+.heart-restaurant i {
+  color: black;
+  font-size: 24px;
+  position: absolute;
+  right: 34px;
+  top: 39.5%;
+  transform: translateY(-50%);
+}
+.heart-restaurant .fas {
+  color: transparent;
+  opacity: 0;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+}
+.heart-restaurant:hover .fas {
+  opacity: 1;
 }
 
 .footer {
