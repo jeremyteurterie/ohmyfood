@@ -61,35 +61,33 @@ a {
 .accueil-description {
   text-align: center;
   background-color: #F8F8F8;
-  padding: 0px 0px 32px 0px;
+  padding: 0px 0px 64px 0px;
 }
 .accueil-description h2 {
   font-family: font4, sans-serif;
   font-size: 24px;
-  padding: 16px 24px 0px 24px;
+  padding-bottom: 12px;
 }
 .accueil-description p {
   font-family: font5, sans-serif;
   font-size: 16px;
-  padding: 8px 0 16px 0;
+  padding-bottom: 48px;
 }
-.accueil-description button {
+.accueil-description .button-1 {
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   border: none;
+  color: white;
   border-radius: 2rem;
   box-shadow: 2px 1px 10px -5px black;
+  font-family: font2, sans-serif;
   font-size: 16px;
   font-weight: bold;
-  padding: 16px 24px;
-  transition: transform 100ms;
+  padding: 1rem 1.5rem;
 }
-.accueil-description button a {
-  color: white;
-}
-.accueil-description button:hover {
-  transform: scale(1.01);
+.accueil-description .button-1:hover {
+  transition-duration: 500ms;
   opacity: 80%;
-  box-shadow: 2px 1px 20px -5px black;
+  box-shadow: 2px 1px 10px -5px black;
 }
 
 .fonctionnement {
@@ -462,24 +460,28 @@ h2 {
   animation: spin2 0.75s ease;
 }
 
-.button {
+.button-restaurant {
   background-color: #F8F8F8;
-  padding: 32px 0;
   text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
 }
-.button button {
+.button-restaurant .button-2 {
+  text-align: center;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   border: none;
+  color: white;
   border-radius: 2rem;
   box-shadow: 2px 1px 10px -5px black;
-  color: white;
-  font-size: 20px;
+  font-family: font2, sans-serif;
+  font-size: 16px;
   font-weight: bold;
-  padding: 16px 24px;
-  transition: transform 200ms;
+  padding: 1rem 3rem;
 }
-.button button button:hover {
-  transform: scale(1.02);
+.button-restaurant .button-2:hover {
+  transition-duration: 500ms;
+  opacity: 80%;
+  box-shadow: 2px 1px 10px -5px black;
 }
 
 .footer {

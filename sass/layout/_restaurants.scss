@@ -124,24 +124,28 @@ h2 {
     }
 }
 
-.button {
+.button-restaurant {
     background-color: #F8F8F8;
-    padding: 32px 0;
     text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
 
-    button {
+    .button-2 {
+        text-align: center;
         background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
         border: none;
+        color: white;
         border-radius: 2rem;
         box-shadow: 2px 1px 10px -5px black;
-        color: white;
-        font-size: 20px;
+        font-family: $font2;
+        font-size: 16px;
         font-weight: bold;
-        padding: 16px 24px;
-        transition: transform 200ms;
+        padding: 1rem 3rem;
     
-        button:hover {
-            transform: scale(1.02);
+        &:hover {
+            transition-duration: 500ms;
+            opacity: 80%;
+            box-shadow: 2px 1px 10px -5px black;
         }
     }
 }
