@@ -8,7 +8,7 @@
 
     i {
         padding: 0 8px 0 0;
-    }
+   }
 }
 
 .accueil-description {
@@ -20,13 +20,13 @@
         font-family: $font4;
         font-size: 24px;
         padding-bottom: 12px;
-    }
+   }
 
     p {
         font-family: $font5;
         font-size: 16px;
         padding-bottom: 48px;
-    }
+   }
 
     .button-1 {
         background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -38,13 +38,13 @@
         font-size: 16px;
         font-weight: bold;
         padding: 1rem 1.5rem;
-    
+
         &:hover {
             transition-duration: 500ms;
             opacity: 80%;
             box-shadow: 2px 1px 10px -5px black;
-        }
-    }
+       }
+   }
 }
 
 .fonctionnement {
@@ -55,12 +55,12 @@
         font-family: $font4;
         font-size: 24px;
         padding: 32px 0px 24px 0px;
-    }
+   }
 
     i {
         color: darkgrey;
         padding-left: 4px;
-    }
+   }
 
     .fonctionnement-cards {
         display: flex;
@@ -70,8 +70,8 @@
         @media (min-width: 768px) {
             flex-direction: row;
             justify-content: space-evenly;
-        }
-    }
+       }
+   }
 
     .card-fonctionnement {
         display: flex;
@@ -84,21 +84,21 @@
         font-family: $font2;
         gap: 16px;
 
-    &::before {
-        display: grid;
-        place-items: center;
-        border-radius: 50%;
-        width: 24px;
-        height: 24px;
-        position: absolute;
-        left: -11px;
-        content: counter(tuto);
-        counter-increment: tuto;
-        background-color: $color1;
-        color: white;
-        font-size: 16px;
-    }
-    }
+        &::before {
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: -11px;
+            content: counter(tuto);
+            counter-increment: tuto;
+            background-color: $color1;
+            color: white;
+            font-size: 16px;
+       }
+   }
 }
 
 .restaurant {
@@ -109,7 +109,7 @@
         font-family: $font4;
         font-size: 24px;
         padding: 24px 0px 20px 0px;
-    }
+   }
 
     .menu {
         display: grid;
@@ -120,8 +120,8 @@
         @media (min-width: 768px) {
             grid-template-columns: repeat(2,1fr);
             gap: 32px;
-        }
-    }
+       }
+   }
 
     .card {
         box-shadow: 2px 1px 10px -5px black;
@@ -137,15 +137,15 @@
             font-family: $font3;
             font-size: 16px;
             color: #078a69;
-        }
-    
+       }
+
         & .card-image {
             height: 150px;
             background-size: cover;
             background-position: bottom;
             border-radius: 10px 10px 0 0;
-        }
-    
+       }
+
         & .card-description {
             background-color: white;
             color: black;
@@ -156,35 +156,36 @@
             & h5 {
                 font-family: $font4;
                 font-size: 16px;
-            }
+           }
 
             & p {
                 font-family: $font5;
                 font-size: 16px;
                 padding-top: 1px;
-            }
-        }
-    
+           }
+       }
+
         & .card-image1 {
             background-image: url('../openclassrooms-ohmyfood/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
-        }
-    
+       }
+
         & .card-image2 {
             background-image: url('../openclassrooms-ohmyfood/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
             background-position: center;
-        }
-    
+       }
+
         & .card-image3 {
             background-image: url('../openclassrooms-ohmyfood/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
-        }
-    
+       }
+
         & .card-image4 {
             background-image: url('../openclassrooms-ohmyfood/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
-        }
-    }
+       }
+   }
 }
 
 .heart {
+
     i {
         color: black;
         font-size: 24px;
@@ -192,16 +193,16 @@
         right: 28px;
         top: 85%;
         transform: translateY(-50%);
-    }
+   }
 
     .fas {
         color: transparent;
         opacity: 0;
         background-clip: text;
         background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-    }
-
+   }
+   
     &:hover .fas {
         opacity: 1;
-    }
+   }
 }
