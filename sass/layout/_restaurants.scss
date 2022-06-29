@@ -38,20 +38,39 @@ h2 {
     .submenu {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            padding-top: 32px;
+            gap: 16px;
+        }
     }
 
     .menu-title {
         padding-top: 32px;
         font-family: $font2;
+        text-transform: uppercase;
+        position: relative;
+        &::after {
+            content: "";
+            height: 0.25rem;
+            width: 3.25rem;
+            background-color: $tertiaire;
+            position: absolute;
+            top: 3.75rem;
+            left: 0rem;
+        }
     }
 
     .menuitem {
         border-radius: 20px;
         background-color: white;
         box-shadow: 1px 1px 7px -4px black;
-        gap: 32px;
         font-family: $font3;
+        &:hover {
+            cursor: pointer;
+        }
 
         .flex {
             display: flex;

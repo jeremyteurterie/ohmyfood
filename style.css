@@ -390,18 +390,36 @@ h2 {
 .menu-restaurant .submenu {
   display: flex;
   flex-direction: column;
+}
+.menu-restaurant .submenu .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
   gap: 16px;
 }
 .menu-restaurant .menu-title {
   padding-top: 32px;
   font-family: font2, sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+.menu-restaurant .menu-title::after {
+  content: "";
+  height: 0.25rem;
+  width: 3.25rem;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 3.75rem;
+  left: 0rem;
 }
 .menu-restaurant .menuitem {
   border-radius: 20px;
   background-color: white;
   box-shadow: 1px 1px 7px -4px black;
-  gap: 32px;
   font-family: font3, sans-serif;
+}
+.menu-restaurant .menuitem:hover {
+  cursor: pointer;
 }
 .menu-restaurant .menuitem .flex {
   display: flex;
