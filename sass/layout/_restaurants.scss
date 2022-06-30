@@ -40,6 +40,10 @@ h2 {
         flex-direction: column;
         overflow: hidden;
 
+        & h3 {
+            font-weight: 300;
+        }
+
         .wrapper {
             display: flex;
             flex-direction: column;
@@ -95,12 +99,14 @@ h2 {
             overflow: hidden;
 
             & h4 {
+                font-size: 18px;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
             }
             & p {
                 font-family: $font5;
+                padding-top: 5px;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -124,7 +130,7 @@ h2 {
             width: 24px;
             border-radius: 32px;
             background-color: white;
-            aspect-ratio: 1;
+            aspect-ratio: 1/1;
         }
 
         &:hover
@@ -171,6 +177,7 @@ h2 {
         right: 34px;
         top: 39.5%;
         transform: translateY(-50%);
+        transition-duration: 0.75s;
     }
 
     .fas {

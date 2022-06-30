@@ -106,7 +106,7 @@ a {
 .fonctionnement .fonctionnement-cards {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 24px;
 }
 @media (min-width: 768px) {
   .fonctionnement .fonctionnement-cards {
@@ -118,6 +118,7 @@ a {
   display: flex;
   align-items: center;
   background-color: #F8F8F8;
+  box-shadow: 0px 1px 16px -4px darkgray;
   position: relative;
   padding: 24px;
   position: relative;
@@ -139,6 +140,12 @@ a {
   color: white;
   font-size: 16px;
 }
+.fonctionnement .card-fonctionnement:hover {
+  background-color: #f4eefb;
+}
+.fonctionnement .card-fonctionnement:hover i {
+  color: #9356DC;
+}
 
 .restaurant {
   background-color: #F8F8F8;
@@ -151,7 +158,7 @@ a {
 }
 .restaurant .menu {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   gap: 16px;
   padding-bottom: 24px;
 }
@@ -186,17 +193,17 @@ a {
   background-color: white;
   color: black;
   border-radius: 0 0 10px 10px;
-  padding: 8px 0 8px 8px;
+  padding: 16px;
   position: relative;
 }
 .restaurant .card .card-description h5 {
-  font-family: font4, sans-serif;
-  font-size: 16px;
+  font-family: font3, sans-serif;
+  font-size: 18px;
 }
 .restaurant .card .card-description p {
   font-family: font5, sans-serif;
-  font-size: 16px;
-  padding-top: 1px;
+  font-size: 18px;
+  padding-top: 3px;
 }
 .restaurant .card .card-image1 {
   background-image: url("../openclassrooms-ohmyfood/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -212,13 +219,17 @@ a {
   background-image: url("../openclassrooms-ohmyfood/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
+.heart {
+  display: block;
+}
 .heart i {
   color: black;
   font-size: 24px;
   position: absolute;
   right: 28px;
-  top: 85%;
+  top: 80%;
   transform: translateY(-50%);
+  transition-duration: 0.75s;
 }
 .heart .fas {
   color: transparent;
@@ -392,6 +403,9 @@ h2 {
   flex-direction: column;
   overflow: hidden;
 }
+.menu-restaurant .submenu h3 {
+  font-weight: 300;
+}
 .menu-restaurant .submenu .wrapper {
   display: flex;
   flex-direction: column;
@@ -442,12 +456,14 @@ h2 {
   overflow: hidden;
 }
 .menu-restaurant .menuitem .text h4 {
+  font-size: 18px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .menu-restaurant .menuitem .text p {
   font-family: font5, sans-serif;
+  padding-top: 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -468,7 +484,7 @@ h2 {
   width: 24px;
   border-radius: 32px;
   background-color: white;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
 }
 .menu-restaurant .menuitem:hover .check {
   margin-right: 0;
@@ -508,6 +524,7 @@ h2 {
   right: 34px;
   top: 39.5%;
   transform: translateY(-50%);
+  transition-duration: 0.75s;
 }
 .heart-restaurant .fas {
   color: transparent;
@@ -541,10 +558,10 @@ h2 {
   padding-left: 4px;
 }
 .footer h4 {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 24px;
+  padding-bottom: 16px;
   font-family: font1, sans-serif;
-  font-size: medium;
+  font-size: 18px;
 }
 .footer li {
   padding-bottom: 2px;
