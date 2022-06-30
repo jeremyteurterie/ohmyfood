@@ -38,6 +38,7 @@ h2 {
     .submenu {
         display: flex;
         flex-direction: column;
+        overflow: hidden;
 
         .wrapper {
             display: flex;
@@ -68,13 +69,16 @@ h2 {
         background-color: white;
         box-shadow: 1px 1px 7px -4px black;
         font-family: $font3;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 2px;
         &:hover {
             cursor: pointer;
         }
-
+        
         .flex {
             display: flex;
-            overflow: hidden;
             border-radius: 20px;
         }
 
@@ -88,10 +92,19 @@ h2 {
 
         .text {
             padding: 16px;
-        }
+            overflow: hidden;
 
-        & .text p {
-            font-family: $font5;
+            & h4 {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            & p {
+                font-family: $font5;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
         }
 
         .check {

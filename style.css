@@ -390,6 +390,7 @@ h2 {
 .menu-restaurant .submenu {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .menu-restaurant .submenu .wrapper {
   display: flex;
@@ -417,13 +418,16 @@ h2 {
   background-color: white;
   box-shadow: 1px 1px 7px -4px black;
   font-family: font3, sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 2px;
 }
 .menu-restaurant .menuitem:hover {
   cursor: pointer;
 }
 .menu-restaurant .menuitem .flex {
   display: flex;
-  overflow: hidden;
   border-radius: 20px;
 }
 .menu-restaurant .menuitem .price {
@@ -435,9 +439,18 @@ h2 {
 }
 .menu-restaurant .menuitem .text {
   padding: 16px;
+  overflow: hidden;
+}
+.menu-restaurant .menuitem .text h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-restaurant .menuitem .text p {
   font-family: font5, sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-restaurant .menuitem .check {
   display: grid;
