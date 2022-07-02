@@ -1,7 +1,7 @@
 .banniere img {
     display: block;
     width: 100%;
-    height: 35vh;
+    height: 400px;
     object-fit: cover;
     object-position: center;
 }
@@ -170,12 +170,14 @@ h2 {
 }
 
 .heart-restaurant {
+    position: relative;
+
     i {
         color: black;
         font-size: 24px;
         position: absolute;
         right: 34px;
-        top: 42%;
+        top: -45px;
         transform: translateY(-50%);
         transition-duration: 0.75s;
     }
