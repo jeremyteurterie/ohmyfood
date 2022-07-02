@@ -197,18 +197,18 @@
 
     i {
         color: black;
-        font-size: 24px;
+        font-size: 26px;
         position: absolute;
         right: 28px;
-        top: 80%;
-        transform: translateY(-50%);
+        top: 170px;
         transition-duration: 0.75s;
    }
 
     .fas {
-        color: transparent;
         opacity: 0;
         background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
         background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
    }
    
