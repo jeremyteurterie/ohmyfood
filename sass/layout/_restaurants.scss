@@ -1,195 +1,194 @@
 .banniere img {
-    display: block;
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    object-position: center;
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
 }
 
 h2 {
-    font-size: 32px;
-    font-family: $font1;
-    padding: 35px 0px 0px 16px;
+  font-size: 32px;
+  font-family: $font1;
+  padding: 35px 0px 0px 16px;
 }
 
 .header-restaurant-1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    background-color: #F8F8F8;
-    border-radius: 32px 32px 0px 0px;
-    margin-top: -90px;
-    padding-bottom: 20px;
-    border-bottom: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #f8f8f8;
+  border-radius: 32px 32px 0px 0px;
+  margin-top: -90px;
+  padding-bottom: 20px;
+  border-bottom: white;
 }
 
 .menu-restaurant {
-    background-color: #F8F8F8;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0px 16px;
+  background-color: #f8f8f8;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0px 16px;
 
-    @media (min-width: 1200px) {
-        grid-template-columns: repeat(3,1fr);
-        gap: 32px;
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    & h3 {
+      font-weight: 300;
     }
 
-    .submenu {
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-top: 32px;
+      gap: 16px;
+    }
+  }
 
-        & h3 {
-            font-weight: 300;
-        }
+  .menu-title {
+    padding-top: 32px;
+    font-family: $font2;
+    text-transform: uppercase;
+    position: relative;
+    &::after {
+      content: "";
+      height: 0.25rem;
+      width: 3.25rem;
+      background-color: $tertiaire;
+      position: absolute;
+      top: 3.75rem;
+      left: 0rem;
+    }
+  }
 
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-            padding-top: 32px;
-            gap: 16px;
-        }
+  .menuitem {
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 7px -4px black;
+    font-family: $font3;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 2px;
+    &:hover {
+      cursor: pointer;
     }
 
-    .menu-title {
-        padding-top: 32px;
-        font-family: $font2;
-        text-transform: uppercase;
-        position: relative;
-        &::after {
-            content: "";
-            height: 0.25rem;
-            width: 3.25rem;
-            background-color: $tertiaire;
-            position: absolute;
-            top: 3.75rem;
-            left: 0rem;
-        }
+    .flex {
+      display: flex;
+      border-radius: 20px;
     }
 
-    .menuitem {
-        border-radius: 20px;
-        background-color: white;
-        box-shadow: 1px 1px 7px -4px black;
-        font-family: $font3;
+    .price {
+      display: flex;
+      align-items: flex-end;
+      margin-left: auto;
+      padding-right: 16px;
+      padding-bottom: 16px;
+    }
+
+    .text {
+      padding: 16px;
+      overflow: hidden;
+
+      & h4 {
+        font-size: 18px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        margin: 2px;
-        &:hover {
-            cursor: pointer;
-        }
-        
-        .flex {
-            display: flex;
-            border-radius: 20px;
-        }
-
-        .price {
-            display: flex;
-            align-items: flex-end;
-            margin-left: auto;
-            padding-right: 16px;
-            padding-bottom: 16px;
-        }
-
-        .text {
-            padding: 16px;
-            overflow: hidden;
-
-            & h4 {
-                font-size: 18px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-            & p {
-                font-family: $font5;
-                padding-top: 5px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-        }
-
-        .check {
-            display: grid;
-            place-items: center;
-            background-color: $tertiaire;
-            margin-right: -64px;
-            border-radius: 0px 20px 20px 0px;
-            width: 64px;
-            transition: all 0.5s;
-        }
-
-        .check i {
-            display: grid;
-            place-items: center;
-            color: $tertiaire;
-            width: 24px;
-            border-radius: 32px;
-            background-color: white;
-            aspect-ratio: 1/1;
-        }
-
-        &:hover
-        .check {
-            margin-right: 0;
-            i {
-                animation: spin2 0.75s ease;
-            }
-        } 
+      }
+      & p {
+        font-family: $font5;
+        padding-top: 5px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
     }
+
+    .check {
+      display: grid;
+      place-items: center;
+      background-color: $tertiaire;
+      margin-right: -64px;
+      border-radius: 0px 20px 20px 0px;
+      width: 64px;
+      transition: all 0.5s;
+    }
+
+    .check i {
+      display: grid;
+      place-items: center;
+      color: $tertiaire;
+      width: 24px;
+      border-radius: 32px;
+      background-color: white;
+      aspect-ratio: 1/1;
+    }
+
+    &:hover .check {
+      margin-right: 0;
+      i {
+        animation: spin2 0.75s ease;
+      }
+    }
+  }
 }
 
 .button-restaurant {
-    background-color: #F8F8F8;
-    text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 6rem;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
 
-    .button-2 {
-        text-align: center;
-        background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-        border: none;
-        color: white;
-        border-radius: 2rem;
-        box-shadow: 0px 2px 10px -3px black;
-        font-family: $font2;
-        font-size: 16px;
-        font-weight: bold;
-        padding: 1rem 3rem;
-    
-        &:hover {
-            transition-duration: 500ms;
-            opacity: 80%;
-            box-shadow: 0px 2px 15px -3px black;
-        }
+  .button-2 {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 10px -3px black;
+    font-family: $font2;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1rem 3rem;
+
+    &:hover {
+      transition-duration: 500ms;
+      opacity: 80%;
+      box-shadow: 0px 2px 15px -3px black;
     }
+  }
 }
 
 .heart-restaurant {
-    position: relative;
+  position: relative;
 
-    i {
-        color: black;
-        font-size: 26px;
-        position: absolute;
-        right: 34px;
-        top: -43px;
-        transform: translateY(-50%);
-        transition-duration: 0.75s;
-    }
+  i {
+    color: black;
+    font-size: 26px;
+    position: absolute;
+    right: 34px;
+    top: -43px;
+    transform: translateY(-50%);
+    transition-duration: 0.75s;
+  }
 
-    .fas {
-        color: transparent;
-        opacity: 0;
-        background-clip: text;
-        background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-    }
+  .fas {
+    color: transparent;
+    opacity: 0;
+    background-clip: text;
+    background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  }
 
-    &:hover .fas {
-        opacity: 1;
-    }
+  &:hover .fas {
+    opacity: 1;
+  }
 }

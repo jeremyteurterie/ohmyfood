@@ -1,41 +1,41 @@
 .footer {
-    background-color: #353535;
-    padding: 0 32px 16px 32px;
-    color: white;
+  background-color: #353535;
+  padding: 0 32px 16px 32px;
+  color: white;
 
-    .list {
-        display: flex;
-        padding-top: 5px;
+  .list {
+    display: flex;
+    padding-top: 5px;
 
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
+    a {
+      text-decoration: none;
+      color: white;
     }
 
-    .text1 {
-        padding-left: 10px;
+    a:hover {
+      text-decoration: underline;
     }
+  }
 
-    .text2 {
-        padding-left: 4px;
-    }
+  .text1 {
+    padding-left: 10px;
+  }
 
-    h4 {
-        padding-top: 24px;
-        padding-bottom: 16px;
-        font-family: $font1;
-        font-size: 18px;
-    }
+  .text2 {
+    padding-left: 4px;
+  }
 
-    li {
-        padding-bottom: 2px;
-        list-style: none;
-        font-family: $font5;
-        font-size: medium;
-    }
+  h4 {
+    padding-top: 24px;
+    padding-bottom: 16px;
+    font-family: $font1;
+    font-size: 18px;
+  }
+
+  li {
+    padding-bottom: 2px;
+    list-style: none;
+    font-family: $font5;
+    font-size: medium;
+  }
 }
