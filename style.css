@@ -1,22 +1,22 @@
 @font-face {
   font-family: "font1";
-  src: url(../openclassrooms-ohmyfood/assets/fonts/Shrikhand-Regular.ttf);
+  src: url(../ohmyfood/assets/fonts/Shrikhand-Regular.ttf);
 }
 @font-face {
   font-family: "font2";
-  src: url(../openclassrooms-ohmyfood/assets/fonts/Roboto-Regular.ttf);
+  src: url(../ohmyfood/assets/fonts/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: "font3";
-  src: url(../openclassrooms-ohmyfood/assets/fonts/Roboto-Medium.ttf);
+  src: url(../ohmyfood/assets/fonts/Roboto-Medium.ttf);
 }
 @font-face {
   font-family: "font4";
-  src: url(../openclassrooms-ohmyfood/assets/fonts/Roboto-Bold.ttf);
+  src: url(../ohmyfood/assets/fonts/Roboto-Bold.ttf);
 }
 @font-face {
   font-family: "font5";
-  src: url(../openclassrooms-ohmyfood/assets/fonts/Roboto-Light.ttf);
+  src: url(../ohmyfood/assets/fonts/Roboto-Light.ttf);
 }
 * {
   box-sizing: border-box;
@@ -47,7 +47,7 @@ a {
 }
 
 .localisation {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   font-family: font3, sans-serif;
   font-size: 16px;
   text-align: center;
@@ -60,7 +60,7 @@ a {
 
 .accueil-description {
   text-align: center;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   padding: 0px 0px 64px 0px;
 }
 .accueil-description h2 {
@@ -74,7 +74,7 @@ a {
   padding-bottom: 48px;
 }
 .accueil-description .button-1 {
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
   border: none;
   color: white;
   border-radius: 2rem;
@@ -117,7 +117,7 @@ a {
 .fonctionnement .card-fonctionnement {
   display: flex;
   align-items: center;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   box-shadow: 0px 1px 16px -4px darkgray;
   position: relative;
   padding: 24px;
@@ -135,7 +135,7 @@ a {
   left: -11px;
   content: counter(etape);
   counter-increment: etape;
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   font-size: 16px;
 }
@@ -143,11 +143,11 @@ a {
   background-color: #f4eefb;
 }
 .fonctionnement .card-fonctionnement:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .restaurant {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   padding: 24px;
 }
 .restaurant h3 {
@@ -176,7 +176,7 @@ a {
   position: absolute;
   top: 8px;
   right: 10px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   padding: 9px 12px;
   font-family: font3, sans-serif;
   font-size: 16px;
@@ -205,17 +205,17 @@ a {
   padding-top: 3px;
 }
 .restaurant .card .card-image1 {
-  background-image: url("../openclassrooms-ohmyfood/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("../ohmyfood/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 .restaurant .card .card-image2 {
-  background-image: url("../openclassrooms-ohmyfood/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("../ohmyfood/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-position: center;
 }
 .restaurant .card .card-image3 {
-  background-image: url("../openclassrooms-ohmyfood/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("../ohmyfood/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 .restaurant .card .card-image4 {
-  background-image: url("../openclassrooms-ohmyfood/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("../ohmyfood/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 .heart {
@@ -234,7 +234,7 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
 }
 .heart:hover .fas {
   opacity: 1;
@@ -245,7 +245,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 100vh;
   inset: 0px;
   z-index: 1;
@@ -255,7 +255,7 @@ a {
 }
 .loading-spinner i {
   animation: spin 1.5s infinite;
-  color: #9356DC;
+  color: #9356dc;
 }
 
 @keyframes loader {
@@ -363,8 +363,10 @@ a {
   display: block;
   width: 100%;
   height: 400px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 h2 {
@@ -378,7 +380,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   border-radius: 32px 32px 0px 0px;
   margin-top: -90px;
   padding-bottom: 20px;
@@ -386,7 +388,7 @@ h2 {
 }
 
 .menu-restaurant {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   display: grid;
   grid-template-columns: 1fr;
   padding: 0px 16px;
@@ -421,7 +423,7 @@ h2 {
   content: "";
   height: 0.25rem;
   width: 3.25rem;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   position: absolute;
   top: 3.75rem;
   left: 0rem;
@@ -470,7 +472,7 @@ h2 {
 .menu-restaurant .menuitem .check {
   display: grid;
   place-items: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   margin-right: -64px;
   border-radius: 0px 20px 20px 0px;
   width: 64px;
@@ -479,7 +481,7 @@ h2 {
 .menu-restaurant .menuitem .check i {
   display: grid;
   place-items: center;
-  color: #99E2D0;
+  color: #99e2d0;
   width: 24px;
   border-radius: 32px;
   background-color: white;
@@ -493,14 +495,14 @@ h2 {
 }
 
 .button-restaurant {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 6rem;
 }
 .button-restaurant .button-2 {
   text-align: center;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
   border: none;
   color: white;
   border-radius: 2rem;
@@ -531,8 +533,9 @@ h2 {
 .heart-restaurant .fas {
   color: transparent;
   opacity: 0;
-  background-clip: text;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
 }
 .heart-restaurant:hover .fas {
   opacity: 1;
@@ -571,6 +574,4 @@ h2 {
   list-style: none;
   font-family: font5, sans-serif;
   font-size: medium;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
