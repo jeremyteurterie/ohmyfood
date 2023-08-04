@@ -1,4 +1,8 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [Released v1.0.0]
+## [1.0.0] (2022-07-03)
+
+### Features
+
+* Launch v1.0.0 in production.
