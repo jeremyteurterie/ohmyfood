@@ -1,23 +1,3 @@
-@font-face {
-  font-family: 'font1';
-  src: url(../ohmyfood/assets/fonts/Shrikhand-Regular.ttf);
-}
-@font-face {
-  font-family: 'font2';
-  src: url(../ohmyfood/assets/fonts/Roboto-Regular.ttf);
-}
-@font-face {
-  font-family: 'font3';
-  src: url(../ohmyfood/assets/fonts/Roboto-Medium.ttf);
-}
-@font-face {
-  font-family: 'font4';
-  src: url(../ohmyfood/assets/fonts/Roboto-Bold.ttf);
-}
-@font-face {
-  font-family: 'font5';
-  src: url(../ohmyfood/assets/fonts/Roboto-Light.ttf);
-}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -32,7 +12,7 @@ a {
   position: relative;
 }
 .header h2 {
-  font-family: font1, sans-serif;
+  font-family: "Shrikhand", cursive;
   font-size: 32px;
   text-align: center;
   padding: 16px 0px;
@@ -48,7 +28,7 @@ a {
 
 .localisation {
   background-color: #eeeeee;
-  font-family: font3, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   text-align: center;
   padding: 16px 0px;
@@ -64,12 +44,12 @@ a {
   padding: 0px 0px 64px 0px;
 }
 .accueil-description h2 {
-  font-family: font4, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   padding-bottom: 12px;
 }
 .accueil-description p {
-  font-family: font5, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   padding-bottom: 48px;
 }
@@ -79,7 +59,7 @@ a {
   color: white;
   border-radius: 2rem;
   box-shadow: 0px 2px 10px -3px black;
-  font-family: font2, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: bold;
   padding: 1rem 1.5rem;
@@ -92,10 +72,15 @@ a {
 
 .fonctionnement {
   counter-reset: etape;
-  padding: 24px 100px;
+  padding: 24px 125px;
+}
+@media (max-width: 992px) {
+  .fonctionnement {
+    padding: 24px;
+  }
 }
 .fonctionnement h3 {
-  font-family: font4, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   padding: 32px 0px 24px 0px;
 }
@@ -122,7 +107,7 @@ a {
   position: relative;
   padding: 24px;
   border-radius: 20px;
-  font-family: font2, sans-serif;
+  font-family: "Roboto", sans-serif;
   gap: 16px;
 }
 .fonctionnement .card-fonctionnement::before {
@@ -148,10 +133,15 @@ a {
 
 .restaurant {
   background-color: #f8f8f8;
-  padding: 24px 100px;
+  padding: 24px 125px;
+}
+@media (max-width: 992px) {
+  .restaurant {
+    padding: 24px;
+  }
 }
 .restaurant h3 {
-  font-family: font4, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   padding: 24px 0px 20px 0px;
 }
@@ -178,7 +168,7 @@ a {
   right: 10px;
   background-color: #99e2d0;
   padding: 9px 12px;
-  font-family: font3, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #078a69;
 }
@@ -196,26 +186,28 @@ a {
   position: relative;
 }
 .restaurant .card .card-description h5 {
-  font-family: font3, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
 .restaurant .card .card-description p {
-  font-family: font5, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   padding-top: 3px;
 }
 .restaurant .card .card-image1 {
-  background-image: url('../ohmyfood/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+  background-image: url(./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .restaurant .card .card-image2 {
-  background-image: url('../ohmyfood/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
+  background-image: url(./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-position: center;
 }
 .restaurant .card .card-image3 {
-  background-image: url('../ohmyfood/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+  background-image: url(./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 }
 .restaurant .card .card-image4 {
-  background-image: url('../ohmyfood/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+  background-image: url(./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
 
 .heart {
@@ -364,14 +356,14 @@ a {
   width: 100%;
   height: 400px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
 }
 
 h2 {
   font-size: 32px;
-  font-family: font1, sans-serif;
+  font-family: "Shrikhand", cursive;
   padding: 35px 0px 0px 16px;
 }
 
@@ -415,12 +407,12 @@ h2 {
 }
 .menu-restaurant .menu-title {
   padding-top: 32px;
-  font-family: font2, sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   position: relative;
 }
 .menu-restaurant .menu-title::after {
-  content: '';
+  content: "";
   height: 0.25rem;
   width: 3.25rem;
   background-color: #99e2d0;
@@ -432,7 +424,7 @@ h2 {
   border-radius: 20px;
   background-color: white;
   box-shadow: 1px 1px 7px -4px black;
-  font-family: font3, sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -463,7 +455,7 @@ h2 {
   text-overflow: ellipsis;
 }
 .menu-restaurant .menuitem .text p {
-  font-family: font5, sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-top: 5px;
   overflow: hidden;
   white-space: nowrap;
@@ -507,7 +499,7 @@ h2 {
   color: white;
   border-radius: 2rem;
   box-shadow: 0px 2px 10px -3px black;
-  font-family: font2, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: bold;
   padding: 1rem 3rem;
@@ -534,7 +526,7 @@ h2 {
   color: transparent;
   opacity: 0;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   background-image: linear-gradient(to bottom, #ff79da, #9356dc);
 }
 .heart-restaurant:hover .fas {
@@ -566,12 +558,12 @@ h2 {
 .footer h4 {
   padding-top: 24px;
   padding-bottom: 16px;
-  font-family: font1, sans-serif;
+  font-family: "Shrikhand", cursive;
   font-size: 18px;
 }
 .footer li {
   padding-bottom: 2px;
   list-style: none;
-  font-family: font5, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: medium;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

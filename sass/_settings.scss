@@ -1,34 +1,4 @@
 // REGLAGES GENERAUX
-@font-face {
-  font-family: 'font1';
-  src: url(../ohmyfood/assets/fonts/Shrikhand-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'font2';
-  src: url(../ohmyfood/assets/fonts/Roboto-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'font3';
-  src: url(../ohmyfood/assets/fonts/Roboto-Medium.ttf);
-}
-
-@font-face {
-  font-family: 'font4';
-  src: url(../ohmyfood/assets/fonts/Roboto-Bold.ttf);
-}
-
-@font-face {
-  font-family: 'font5';
-  src: url(../ohmyfood/assets/fonts/Roboto-Light.ttf);
-}
-
-$font1: font1, sans-serif;
-$font2: font2, sans-serif;
-$font3: font3, sans-serif;
-$font4: font4, sans-serif;
-$font5: font5, sans-serif;
 $color1: #9356dc;
 $color2: #ff79da;
 $tertiaire: #99e2d0;
